@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head}}
+</head>
+<body>
+    {{>nav}}
+
+     <div class="container">
+         <div class="dic_form">
+             <form>
+                 <input type="text" id="searchWord" placeholder="Search any word" autocomplete="off">
+                 <input type="submit"  id="submitBtn" value="Search">
+             </form>
+         </div>
+         <div class="dic_box">
+             <div class="dic_name">Get Output Here</div>
+             <div class="result_box">
+                 <h1>Meaning:</h1>
+                 <div class="dic_result" id="mean_results"></div>
+                 <h1>Example:</h1>
+                 <div class="dic_result" id="mean_ex"> </div>
+             </div>
+         </div>
+     </div>
+    {{>foot}}
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-back{
+    background-color: b;
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+.logo a{
+    font-size: 30px;
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-nav li{
+    list-style: none;
+    margin: 0 30px;
+}
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s all;
+    padding-bottom: 10px;
+}
+.main-nav li a:hover{
+    color: crimson;
+    border-bottom: 2px solid crimson;
+}
+/* HOME */
+.home{
+    padding: 0 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_box{
+    width: 50%;
+    padding-top: 60px;
+}
+.left_box p{
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+.left_box h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#main_word{
+    color: crimson;
+}
+ button{
+    font-size: 25px;
+    padding: 8px 20px;
+    color: crimson;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s all;
+}
+button:hover{
+    box-shadow: 1px 0 5px 5px crimson;
+    background: none;
+    color: crimson;
+
+}
+.right_box{
+    padding-top: 60px;
+    width: 45%;
+}
+.right_box img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* dic  */
+.container{
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.dic_form{
+    width: 100%;
+
+    text-align: center;
+}
+.dic_form input{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border: 3px solid crimson;
+}
+#searchWord{
+    width: 40%;
+    margin: 0 ;
+    border-radius: 20px 0 0 20px ;
+    outline: none;
+}
+#submitBtn{
+    font-size: 20px;
+    border-radius:0 20px 20px 0;
+    width: 10%;
+    color: white;
+    cursor: pointer;
+    background-color: crimson;
+}
+.dic_box{
+    width: 40%;
+    border-radius: 20px;
+    height: 300px;
+    background-color: black;
+    padding: 50px;
+    color: white;
+    margin: 20px 0;
+}
+.dic_name{
+    font-size: 20px;
+    color: grey;
+}
+.result_box{
+    padding: 10px 0;
+}
+.result_box h1{
+    font-size: 25px;
+    color: grey;
+    margin-bottom: 5px;
+}
+.dic_result{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+.dic_hide{
+    display: none;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    padding:  auto 5px;
+}
+
+/* Error Page  */
+.error_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error_box img{
+    width: 45%;
+}
+.error_box h1{
+    margin: 10px;
+}
+
+
+/* RESPONSIVE SECTION  */

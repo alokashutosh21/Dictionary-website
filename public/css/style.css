@@ -4,6 +4,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 60%;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 .navbar-back{
     background-color: b;
@@ -18,7 +23,7 @@
     padding: 20px 60px;
 }
 .logo a{
-    font-size: 30px;
+    font-size: 3rem;
     text-decoration: none;
     color: wheat;
     cursor: pointer;
@@ -36,9 +41,16 @@
 .main-nav li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     transition: 0.5s all;
     padding-bottom: 10px;
+}
+.bars{
+    font-size: 50px;
+    position: absolute;
+    right: 40px;
+    visibility: hidden;
+
 }
 .main-nav li a:hover{
     color: crimson;
@@ -57,19 +69,20 @@
     padding-top: 60px;
 }
 .left_box p{
-   font-size: 20px;
+   font-size: 2rem;
    margin-bottom: 30px;
 }
 .left_box h1{
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
 #main_word{
     color: crimson;
+    font-size: 5rem;
 }
  button{
-    font-size: 25px;
+    font-size: 3rem;
     padding: 8px 20px;
     color: crimson;
     background-color: crimson;
@@ -104,13 +117,11 @@ button:hover{
 }
 .dic_form{
     width: 100%;
-
     text-align: center;
 }
 .dic_form input{
     padding: 10px;
-    font-size: 20px;
-    border: none;
+    font-size: 2rem;    
     border: 3px solid crimson;
 }
 #searchWord{
@@ -120,7 +131,7 @@ button:hover{
     outline: none;
 }
 #submitBtn{
-    font-size: 20px;
+    font-size: 2rem;
     border-radius:0 20px 20px 0;
     width: 10%;
     color: white;
@@ -137,38 +148,39 @@ button:hover{
     margin: 20px 0;
 }
 .dic_name{
-    font-size: 20px;
+    font-size: 2rem;
     color: grey;
 }
 .result_box{
     padding: 10px 0;
 }
 .result_box h1{
-    font-size: 25px;
+    font-size: 2.5rem;
     color: grey;
     margin-bottom: 5px;
 }
 .dic_result{
-    font-size: 20px;
+    font-size: 2.1rem;
     color: white;
     margin-bottom: 10px;
 }
 .dic_hide{
-    display: none;
+    visibility: hidden;
+    transition: all 0.3s linear;
 }
 footer{
     width: 100%;
     background-color: black;
     height: 5rem;
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto 0;
 }
 footer p{
     color: white;
     padding:  auto 5px;
+    font-size: 1.5rem;
 }
 
 /* Error Page  */
@@ -187,3 +199,94 @@ footer p{
 
 
 /* RESPONSIVE SECTION  */
+@media(max-width:780px){
+    .home{
+        flex-direction: column;
+    }
+    .left_box{
+        width: 90%;
+    }
+    .right_box{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .left_box h1{
+        font-size: 4rem;
+    }
+    #main_word{
+        font-size: 4rem;
+    }
+    button{
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+    #searchWord{
+        width: 60%;
+    }
+    #submitBtn{
+        width: 20%;
+    }
+    .dic_box{
+        width: 60%;
+        height: 190px;
+        margin: 10px;
+        position: relative;
+        padding: 20px;
+    }
+    .result_box{
+        position: absolute;
+        top: 0 ;
+        
+    }
+}
+@media(max-width:660px){
+    .main-nav{
+        visibility: hidden;
+        position: absolute;
+        left: 20px;
+    }
+    .bars{
+        visibility: visible;
+    }
+    .container{
+        padding: 60px 20px;
+    }
+    #searchWord{
+        width: 70%;
+    }
+    .dic_box{
+        width: 80%;
+        height: 300px;
+    }
+
+}
+@media(max-width:440px){
+    #searchWord{
+        width: 80%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    #submitBtn{
+        border-radius: 15px;
+        width: 80%;
+    }
+    .left_box{
+        width: 100%;
+    }
+    .right_box{
+        width: 100%;
+    }
+    .bars{
+        right: 10px;
+    }
+    .home{
+        padding: 0 20px;
+    }
+    .navbar{
+        padding: 20px;
+    }
+    .logo a{
+        font-size: 2.5rem;
+    }
+    
+}
